@@ -1,0 +1,523 @@
+
+
+* {
+    margin: 0;padding: 0;
+    font-family:'Exo', sans-serif;
+    font-weight: 400;
+/*    font-family: 'Satisfy', cursive;*/
+}
+
+html{
+    scroll-behavior:smooth; }
+
+ul {list-style: none;}
+
+header {
+	margin:0%;
+	padding:0;
+    padding-top: 0!important; 
+	height: 100vh;
+	border-bottom: 1px solid black;
+	background-image: url(images/fond.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* liste de compétences */
+
+#conteneur1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#resume{
+    margin-left: 50px;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+.titres{
+    display: flex;
+    flex-direction: column;
+	order:2;
+    padding: 20px;
+}
+
+.fa-html5{
+    color:rgb(228,77,38);
+}
+.fa-css3-alt{
+    color:rgb(38,77,228);
+    
+}
+.fa-js{
+    color:rgb(214,186,50);
+
+}
+.fa-php{
+    color:rgb(119,123,179);
+
+}
+.fa-database{
+    color:rgb(227,136,0);
+}
+
+i{
+    font-size: 50px;
+    width: 100%
+}
+
+h1
+{font-size: 3em;}
+
+h1,h2
+{
+    color: rgb(199,44,90);
+}
+
+h3
+{
+    font-size: 2em;
+    color: rgb(215,74,117);
+}
+
+
+/* La partie de mon nav*/
+
+nav {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+}
+
+nav ul li{
+	display:inline-block;
+    padding:0 20px;
+    
+}
+
+nav ul li a{
+    
+    text-decoration: none;
+    padding: 0 70px;
+    font-size: 2em;
+    color:rgb(215,74,117);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 40px 0 0;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+
+/* BODY */
+
+
+.corpus{	
+/*    padding-left: 25%; */
+    margin:0;
+    padding-top: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+#experience{
+    width: calc(50% - 1px);
+/*    height: 50%;*/
+    border-right: 1px black solid;
+    background-image:  radial-gradient(circle at center, grey, white);
+}
+#formation{
+    width: 50%;
+/*    height: 50%;*/
+    background-image:  radial-gradient(circle at center, grey, white);
+}
+#formation li {
+    padding-bottom: 5;
+}
+#formation li div {
+    display: inline-block;
+    margin-bottom: 50px;
+
+}
+#competences{
+    width: 100%;
+    border-top: 1px solid black;
+    margin-bottom: 40px;
+/*    display: flex;*/
+/*    flex-direction: column;*/
+}
+
+
+#contact{
+	background-image: url(images/fond.png);
+    border-bottom: 1px solid black;
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+}
+
+       
+  /* animations */  
+    
+
+.bar {
+    position: relative;
+    background-color: #ddd;
+    height: 20px;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.bar-valeur{
+    top: 0;
+    position: absolute;
+    height: 20px;
+    animation: 6s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {width:0;}
+  100%}
+
+.html .bar-valeur {
+    width: 75%;
+    background-color:rgb(228,77,38);
+}
+.css .bar-valeur{
+    width:50%;
+    background-color:rgb(38,77,228);
+}
+.javascript .bar-valeur{
+    width: 10%;
+    background-color:rgb(214,186,50);
+}
+.php .bar-valeur{
+    width:10%;
+    background-color:rgb(119,123,179);
+}
+.mysql .bar-valeur{
+    width:10%;
+    background-color:rgb(227,136,0);
+}
+
+#competences2{
+    margin-top:20px;
+}
+
+
+#competences2 ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width:80%
+}
+
+
+.anglais .bar-valeur{
+    width: 70%;
+    background-color: blue;
+}
+.espagnole .bar-valeur{
+    width: 60%;
+    background-color: green;
+}
+.lsf .bar-valeur{
+    width: 100%;
+    background-color: red;
+}
+
+#qualites{
+    padding-top: 20px;
+}
+#qualites h3{
+    padding-bottom: 20px;
+}
+#qualites ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+/* résumé sur la 1ère page */
+
+#resume{
+    color: white;
+}
+.corpus .blanc{
+    color: white;
+    margin: 20px;}
+
+
+.html p{
+    color:rgb(228,77,38);
+}
+.css p{
+    color:rgb(38,77,228);
+}
+.javascript p{
+    color:rgb(214,186,50);
+}
+.php p{
+    color:rgb(119,123,179);
+}
+.mysql p {
+    color:rgb(227,136,0);
+}
+
+.nom1{
+    color:white;
+}
+.email1{
+    color: white;
+}
+
+.titrecontact{
+    padding-top: 40px;
+}
+
+/* La page 2 expérience et formation*/
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* formulaire */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+label, input, textarea{
+        width: 30%;}
+
+input, textarea {;margin-bottom: 10px;}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: rgb(19,190,204);
+    height: 40px;
+}
+
+label {display: flex;}
+
+label, input {height: 30px;}
+
+.fa-user-graduate{
+    position: relative;
+    padding-right: 20px;
+    display: inline;
+    }
+
+img{
+    position: relative;
+    right: 20px;
+    height: 50px;
+    width: 70px;
+    display: inline;
+
+}
+.fa-award
+{   
+    position: relative;
+    right: 50px;
+    display: inline;
+/*    padding-left: 50px;*/
+    color: rgb(239,216,7);
+}
+.fa-user-cog{
+    position: relative;
+    bottom: 20px;
+    right: 35px;
+    display: inline;
+/*    padding-left: 50px;*/
+    color: orange;
+}
+.cours
+{
+    font-size:0.8em;
+    font-style: italic;
+}
+.certif{
+    font-weight: bold;
+}
+
+
+.photo{
+    border-radius: 50%;
+    width: 273px;
+    height: 223px;}
+
+.europe{
+    position: relative;
+    top: 20px;
+}
+
+.pourcentage {z-index: 10;position: absolute;right: 0;}
+
+/* scroll button */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(38,77,228); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  margin-bottom:40px;}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+i.fa-arrow-alt-circle-up{font-size:20px;}
+
+
+/* responsive */
+
+@media screen and (max-width:1200px) {
+    #experience, #formation {width: 100%}
+    #experience {padding-bottom: 50px;border-bottom: 1px black solid;}
+    #resume {margin-left: 0px 20px;}
+   label, input, textarea {width: 60%;}
+    
+    
+}
+
+@media screen and (max-width:600px) {
+    nav ul li {
+        padding: 0 5px;display: block}
+    
+    nav ul li a {
+        font-size:14px;}
+    
+    header, .page2, #contact {
+        height:auto;}
+    
+    #conteneur, .page2 {
+        flex-direction: column;}
+    
+    .fa-award {
+        right: unset;}
+    
+    .fa-user-cog{
+        right: unset;bottom: unset;}
+    
+    #formation ul li div {
+        display: flex; justify-content: center;flex-wrap: wrap}
+    
+    #formation ul li div p {
+        width:100%;}
+    
+    #formation img {
+        right: unset;}
+    
+    label, input, textarea {
+        width: 60%;}
+    
+    #contact {
+        padding-bottom: 150px;}
+    
+    #myBtn{
+        right: 5px;}
+    
+    #conteneur1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;}
+    
+    #competences2 ul{
+        display: flex;
+        flex-direction: column;}
+    
+    .bar{
+        margin: auto;}
+    
+    li.html{
+    margin-bottom:20px;}
+    
+    li.css{
+    margin-bottom:20px;}
+    
+    li.javascript{
+    margin-bottom:20px}
+    
+    li.php{
+        margin-bottom: 20px;}
+    
+    li.anglais{
+        margin-bottom: 20px;}
+    
+    li.espagnole{margin-bottom: 20px;}
+    
+    .photo {
+        margin-top: 20px;}
+    
+    .titres {
+        text-align: center;}
+    
+    #qualites ul{
+        display: flex;
+        flex-direction: column;}
+    
+    #resume{
+        margin: 20px 20px;}
+    
+    #experience{
+    border-right: none;}
+    
+    .cours-bases{
+        margin-left: 15px;
+        margin-right: 15px;}
+    
+    .certif{
+        margin-bottom: 10px;}
+}
+
+@media screen and (max-width:1350px){
+    #contact{
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 300px;
+        padding-left: 0px;}
+}
